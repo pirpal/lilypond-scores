@@ -19,6 +19,7 @@ upper = \relative do' {
   \numericTimeSignature
   \time 3/4
   \voiceOne
+  \override StringNumber #'transparent = ##t
   % 1
   <mi, la do>4 <mi do'>8 [ <re si'> <do la'> <si re sold> ]
   <do la'>4 <do la'>2
@@ -69,6 +70,7 @@ lower = \relative do' {
   \numericTimeSignature
   \time 3/4
   \voiceTwo
+  \override StringNumber #'transparent = ##t
   % 1
   la,4 s2
   s4 mi'8 re do si
