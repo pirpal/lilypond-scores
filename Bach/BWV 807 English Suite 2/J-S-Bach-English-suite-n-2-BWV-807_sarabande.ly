@@ -3,11 +3,11 @@
 
 \header {
   title = "English Suite n°2 BWV 807"
-  subtitle = "Sarabande"
+  subtitle = "IV. Sarabande"
   subsubtitle = "transcription for guitar"
   composer = "J.S Bach"
   % Supprimer le pied de page par défaut
-  tagline = ##f
+  % tagline = ##f
 }
 \markup {
   \vspace #2
@@ -50,7 +50,9 @@ upper = \relative do' {
   % 17
   sol'8 mi do si lad sol'
   fad8 do si la sold fa'
+  \override Stem.direction=#DOWN
   mi8 <la do> <sol si> <fad la> <mi sol> <red fad>
+  \override Stem.direction=#UP
   \appoggiatura <red fad>8 <mi sol>4 \appoggiatura fad8 <sol, si mi>2
   % 21
   sol'8 la sol fa mi re
@@ -60,8 +62,8 @@ upper = \relative do' {
   % 25
   mi8 re fa mi la sol
   <fa sib>8 <mi la> <re sold> <do\3 la'> <si fa'> <do mi>
-  <la red>8 mi <la re> do <sold si> la
-  <la do mi>4 <la do mi>2
+  <la red>8 (mi'\2) <la, re> do <sold si> la
+  <mi la do>4 <do' mi la>2
    \bar ":..:"
 }
 
@@ -98,14 +100,14 @@ lower = \relative do' {
   mi,4 sol si
   % 21
   mi4 fa sol
-  la4 r4 r4
-  re,4 mi fa
-  sol4 r4 r4
+  la4 la,4 mi'4
+  re4 mi fa
+  sol4 sol,4 si4
   % 25
-  do8 si la sol fa mi
+  do'8 si la sol fa mi
   s2.
   fad,4 mi mi'
-  la,8 do16 mi <la, mi'>2
+  la,8 do16 mi la,2
 
 }
 

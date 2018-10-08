@@ -61,7 +61,13 @@ upper = \relative do' {
   % 21 -------------------------------------------------------------------------
   <mi,, sib' dod>8 <fa la re> <si, re sold> <do mi la> red8 r8 mi r8
   la'32\2 (si\2 do\2 re mi16) si\2 do la si sold la mi\2 fa\2 re\3 mi\2 la si sold
+  la16\2 do\2 re si\2 do,, mi fa re mi32 (sol la si do16) sol <mi la> do <fa sol> re
+  mi16 do re si <do la'> mi <fa sold> re mi la si sol la do re si
   % 25 -------------------------------------------------------------------------
+  do16 sold la mi fa re mi si do'' sold la mi fa re mi si
+  
+  
+  % 29 -------------------------------------------------------------------------
 }
 
 lower = \relative do' {
