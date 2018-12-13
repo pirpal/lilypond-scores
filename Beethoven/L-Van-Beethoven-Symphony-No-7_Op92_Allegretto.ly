@@ -2,10 +2,9 @@
 \language "italiano"
 
 \header {
-  title = "Symphony No. 7"
+  title = "Symphony No. 7 Op.92"
   subtitle = "II. Allegretto"
   composer = "L. Van Beethoven"
-  opus = "92"
 }
 
 \layout {
@@ -24,9 +23,13 @@ global = {
 
 classicalGuitar = \relative do' {
   \global
-  % 1 ---------------------------------+
-  | <la do mi>4 <la do mi>8 <la do mi> |
-  
+  % 1 ----------------------------------------------+
+  | <la, do mi>4 <la do mi>8 <la do mi>             |
+  | <sold si mi>4 <sold si mi>                      |
+  | si16 (do) <mi, re' mi>8 <mi do' mi> <mi si' mi> |
+  | <si' mi>8 la <la do mi>4                        |
+  % 2 ----------------------------------------------+
+  |   |
 }
 
 \score {
@@ -35,6 +38,7 @@ classicalGuitar = \relative do' {
       midiInstrument = "acoustic guitar (nylon)"
     } { \clef "treble_8" \classicalGuitar }
     \new TabStaff \with {
+      \clef moderntab
       stringTunings = #guitar-tuning
     } \classicalGuitar
   >>
